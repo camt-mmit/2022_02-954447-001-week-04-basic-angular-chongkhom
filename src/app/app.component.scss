@@ -1,0 +1,41 @@
+a {
+    color: blue;
+    text-decoration: none;
+    border: 1px solid blue;
+    border-radius: 4px;
+    }
+
+a.st-active {
+    background-color: silver;
+    }
+
+:host {
+    display: block;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+      
+h1 {
+    text-align: center;
+    }
+      
+nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 8px;
+      
+        & > a {
+          color: blue;
+          text-decoration: none;
+          border: 1px solid blue;
+          border-radius: 4px;
+          padding: 0.5ch;
+        }
+      
+        & > a.st-active {
+          display: flex;
+          background-color: silver;
+        }
+      }
